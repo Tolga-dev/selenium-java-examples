@@ -6,13 +6,12 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Links {
 
-    public void run(WebDriver driver) {
+    public void Run(WebDriver driver) {
         driver.get("https://www.sugarcrm.com/au/request-demo/");
         sleep(1000);
         
         // Accept cookies
         acceptCookies(driver);
-
         // Print all option tags
        // printAllOptionTags(driver);
 

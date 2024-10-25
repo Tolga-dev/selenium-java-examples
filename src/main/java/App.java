@@ -16,19 +16,7 @@ public class App
     {
         System.setProperty("webdriver.chrome.driver", "/home/xamblot/Desktop/SeleniumWithJava/selenium/chromedriver");
         
-        WebDriver driver = new ChromeDriver();
-        DropDown down = new DropDown();
-        ElementMethods methods = new ElementMethods();
-        Links links = new Links();
-
-
-        // methods.Run(driver);
-
-        // down.Run(driver);
-
-        links.Run(driver);
+		 
     }
-
-
 
 }
