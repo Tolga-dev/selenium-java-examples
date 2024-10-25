@@ -1,36 +1,30 @@
-package com.tolgakonat;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import java.time.Duration;
-import java.util.List;
 
+public class ElementMethods {
 
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.setProperty("webdriver.chrome.driver", "/home/xamblot/Desktop/SeleniumWithJava/selenium/chromedriver");
+    public void Run(WebDriver driver) {
         
-        WebDriver driver = new ChromeDriver();
-
 //        DoLoginWithMethods(driver);
 //        DoLoginWithCssSelector(driver);
 //       DoLoginAndGetElements(driver);
-        WebElementMethods(driver);
+//        WebElementMethods(driver);
     }
-
-
     private static void WebElementMethods(WebDriver driver) {
         driver.get("https://saucedemo.com/"); // get google website meta
 
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+        var userName = driver.findElement(By.id("user-name"));
+        userName.sendKeys("standard_user");
+        userName.clear();
 
-
+        var className = userName.getAttribute("class");
+        System.out.println(className);
         
+        var name = userName.getAttribute("name");
+        System.out.println(name);
+        
+
     }
     
     private static void DoLoginAndGetElements(WebDriver driver) {
@@ -86,5 +80,5 @@ public class App
         driver.close();
     }
     
-
+    
 }
