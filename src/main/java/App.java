@@ -19,11 +19,14 @@ public class App
         WebDriver driver = new ChromeDriver();
         DropDown down = new DropDown();
         ElementMethods methods = new ElementMethods();
+        Links links = new Links();
+
 
         // methods.Run(driver);
 
-        down.Run(driver);
+        // down.Run(driver);
 
+        links.Run(driver);
     }
 
 
