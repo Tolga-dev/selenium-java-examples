@@ -61,7 +61,7 @@ This project demonstrates various Selenium WebDriver techniques and interactions
 This project serves as a comprehensive guide to using Selenium WebDriver in Java, demonstrating essential UI interactions and control techniques.
 
 
-This repository will be further developed, and more examples will be added soon
+*This repository will be further developed, and more examples will be added soon*
 
     
 ## `Sources`
